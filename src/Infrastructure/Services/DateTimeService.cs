@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
+﻿using Books.Prototype.Application.Common.Interfaces;
 
-namespace CleanArchitecture.Infrastructure.Services;
+namespace Books.Prototype.Infrastructure.Services;
 
 public class DateTimeService : IDateTime
 {

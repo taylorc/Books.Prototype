@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Domain.Entities;
+﻿using Books.Prototype.Application.Common.Interfaces;
+using Books.Prototype.Domain.Entities;
 using MediatR;
 
-namespace CleanArchitecture.Application.Books.Commands.CreateBook;
+namespace Books.Prototype.Application.Books.Commands.CreateBook;
 
 public record CreateBookCommand : IRequest<int>
 {

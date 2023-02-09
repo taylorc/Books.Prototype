@@ -1,4 +1,4 @@
-using CleanArchitecture.Infrastructure.Persistence;
+using Books.Prototype.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,7 +50,5 @@ app.MapControllerRoute(
     pattern: "{controller}/{action=Index}/{id?}");
 
 app.MapRazorPages();
-
-app.MapFallbackToFile("index.html");
 
 app.Run();

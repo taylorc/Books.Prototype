@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.Common;
+﻿namespace Books.Prototype.Domain.Common;
 
 public abstract class BaseAuditableEntity : BaseEntity
 {

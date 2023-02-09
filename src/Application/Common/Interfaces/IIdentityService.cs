@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Application.Common.Models;
+﻿using Books.Prototype.Application.Common.Models;
 
-namespace CleanArchitecture.Application.Common.Interfaces;
+namespace Books.Prototype.Application.Common.Interfaces;
 
 public interface IIdentityService
 {

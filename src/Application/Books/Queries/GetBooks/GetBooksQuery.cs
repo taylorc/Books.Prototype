@@ -1,13 +1,12 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Application.Common.Security;
+using Books.Prototype.Application.Common.Interfaces;
+using Books.Prototype.Application.Common.Security;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Application.Books.Queries.GetBooks;
+namespace Books.Prototype.Application.Books.Queries.GetBooks;
 
-[Authorize]
 public record GetBooksQuery : IRequest<BooksVm>;
 
 public class GetBooksQueryHandler : IRequestHandler<GetBooksQuery, BooksVm>
@@ -25,10 +24,9 @@ public class GetBooksQueryHandler : IRequestHandler<GetBooksQuery, BooksVm>
     {
         return new BooksVm
         {
-            Lists = await _context.Books
+            Items = await _context.Books
                 .AsNoTracking()
                 .ProjectTo<BooksDto>(_mapper.ConfigurationProvider)
-                .OrderBy(t => t.Title)
                 .ToListAsync(cancellationToken)
         };
     }

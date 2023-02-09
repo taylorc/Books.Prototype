@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.Domain.Entities;
+﻿using Books.Prototype.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace CleanArchitecture.Infrastructure.Persistence.Configurations;
+namespace Books.Prototype.Infrastructure.Persistence.Configurations;
 
 public class BookConfiguration : IEntityTypeConfiguration<Book>
 {

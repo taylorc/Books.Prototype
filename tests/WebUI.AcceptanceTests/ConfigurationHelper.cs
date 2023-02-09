@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace CleanArchitecture.WebUI.AcceptanceTests;
+namespace Books.Prototype.WebUI.AcceptanceTests;
 
 public static class ConfigurationHelper
 {

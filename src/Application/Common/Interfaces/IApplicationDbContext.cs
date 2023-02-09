@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Domain.Entities;
+﻿using Books.Prototype.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Application.Common.Interfaces;
+namespace Books.Prototype.Application.Common.Interfaces;
 
 public interface IApplicationDbContext
 {

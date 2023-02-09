@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.Entities;
+﻿namespace Books.Prototype.Domain.Entities;
 public class Book: BaseEntity
 {
 

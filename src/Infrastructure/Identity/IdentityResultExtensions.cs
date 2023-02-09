@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Application.Common.Models;
+﻿using Books.Prototype.Application.Common.Models;
 using Microsoft.AspNetCore.Identity;
 
-namespace CleanArchitecture.Infrastructure.Identity;
+namespace Books.Prototype.Infrastructure.Identity;
 
 public static class IdentityResultExtensions
 {
