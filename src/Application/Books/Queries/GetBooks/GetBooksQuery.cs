@@ -28,7 +28,6 @@ public class GetBooksQueryHandler : IRequestHandler<GetBooksQuery, BooksVm>
             Lists = await _context.Books
                 .AsNoTracking()
                 .ProjectTo<BooksDto>(_mapper.ConfigurationProvider)
-                .OrderBy(t => t.Title)
                 .ToListAsync(cancellationToken)
         };
     }
