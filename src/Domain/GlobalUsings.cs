@@ -1,2 +1,2 @@
-﻿global using CleanArchitecture.Domain.Common;
-global using CleanArchitecture.Domain.Entities;
+﻿global using Books.Prototype.Domain.Common;
+global using Books.Prototype.Domain.Entities;

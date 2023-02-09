@@ -1,4 +1,4 @@
-using CleanArchitecture.Infrastructure.Persistence;
+using Books.Prototype.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 

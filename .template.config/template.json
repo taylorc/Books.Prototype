@@ -16,7 +16,7 @@
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "CleanArchitecture",
+  "sourceName": "Books.Prototype",
   "preferNameDirectory": true,
   "sources": [
     {

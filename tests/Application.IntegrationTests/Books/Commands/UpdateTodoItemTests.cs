@@ -1,12 +1,12 @@
 ﻿using AutoFixture.NUnit3;
-using CleanArchitecture.Application.Common.Exceptions;
-using CleanArchitecture.Application.Books.Commands.CreateBook;
-using CleanArchitecture.Application.Books.Commands.UpdateBook;
-using CleanArchitecture.Domain.Entities;
+using Books.Prototype.Application.Common.Exceptions;
+using Books.Prototype.Application.Books.Commands.CreateBook;
+using Books.Prototype.Application.Books.Commands.UpdateBook;
+using Books.Prototype.Domain.Entities;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace CleanArchitecture.Application.IntegrationTests.Books.Commands;
+namespace Books.Prototype.Application.IntegrationTests.Books.Commands;
 
 using static Testing;
 

@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Exceptions;
-using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Domain.Entities;
+﻿using Books.Prototype.Application.Common.Exceptions;
+using Books.Prototype.Application.Common.Interfaces;
+using Books.Prototype.Domain.Entities;
 using MediatR;
 
-namespace CleanArchitecture.Application.Books.Commands.UpdateBook;
+namespace Books.Prototype.Application.Books.Commands.UpdateBook;
 
 public record UpdateBookCommand : IRequest
 {

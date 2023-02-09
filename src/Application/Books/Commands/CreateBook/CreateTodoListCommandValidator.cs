@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
+﻿using Books.Prototype.Application.Common.Interfaces;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Application.Books.Commands.CreateBook;
+namespace Books.Prototype.Application.Books.Commands.CreateBook;
 
 public class CreateBookCommandValidator : AbstractValidator<CreateBookCommand>
 {

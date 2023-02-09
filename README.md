@@ -1,8 +1,8 @@
- <img align="left" width="116" height="116" src="https://raw.githubusercontent.com/jasontaylordev/CleanArchitecture/main/.github/icon.png" />
+ <img align="left" width="116" height="116" src="https://raw.githubusercontent.com/jasontaylordev/Books.Prototype/main/.github/icon.png" />
  
  # Clean Architecture Solution Template
-[![Build](https://github.com/jasontaylordev/CleanArchitecture/actions/workflows/dotnet-build.yml/badge.svg)](https://github.com/jasontaylordev/CleanArchitecture/actions/workflows/dotnet-build.yml)
-[![CodeQL](https://github.com/jasontaylordev/CleanArchitecture/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/jasontaylordev/CleanArchitecture/actions/workflows/codeql-analysis.yml)
+[![Build](https://github.com/jasontaylordev/Books.Prototype/actions/workflows/dotnet-build.yml/badge.svg)](https://github.com/jasontaylordev/Books.Prototype/actions/workflows/dotnet-build.yml)
+[![CodeQL](https://github.com/jasontaylordev/Books.Prototype/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/jasontaylordev/Books.Prototype/actions/workflows/codeql-analysis.yml)
 [![Nuget](https://img.shields.io/nuget/v/Clean.Architecture.Solution.Template?label=NuGet)](https://www.nuget.org/packages/Clean.Architecture.Solution.Template)
 [![Nuget](https://img.shields.io/nuget/dt/Clean.Architecture.Solution.Template?label=Downloads)](https://www.nuget.org/packages/Clean.Architecture.Solution.Template)
 [![Discord](https://img.shields.io/discord/893301913662148658?label=Discord)](https://discord.gg/p9YtBjfgGe)
@@ -87,7 +87,7 @@ This layer is a single page application based on Angular 14 and ASP.NET Core 7. 
 
 ## Support
 
-If you are having problems, please let us know by [raising a new issue](https://github.com/jasontaylordev/CleanArchitecture/issues/new/choose).
+If you are having problems, please let us know by [raising a new issue](https://github.com/jasontaylordev/Books.Prototype/issues/new/choose).
 
 ## License
 

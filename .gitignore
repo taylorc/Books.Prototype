@@ -233,6 +233,6 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 /NDependOut
-/CleanArchitecture.ndproj
+/Books.Prototype.ndproj
 /.mfractor
 src/WebUI/ClientApp/package-lock.json

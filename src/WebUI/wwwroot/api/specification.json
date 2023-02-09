@@ -12,21 +12,6 @@
           "Books"
         ],
         "operationId": "Books_GetBooks",
-        "parameters": [
-          {
-            "name": "query",
-            "in": "query",
-            "schema": {
-              "nullable": true,
-              "oneOf": [
-                {
-                  "$ref": "#/components/schemas/GetBooksQuery"
-                }
-              ]
-            },
-            "x-position": 1
-          }
-        ],
         "responses": {
           "200": {
             "description": "",
@@ -38,12 +23,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "JWT": []
-          }
-        ]
+        }
       },
       "post": {
         "tags": [
@@ -74,12 +54,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "JWT": []
-          }
-        ]
+        }
       }
     },
     "/api/Books/{id}": {
@@ -124,12 +99,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "JWT": []
-          }
-        ]
+        }
       }
     }
   },
@@ -139,7 +109,7 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "lists": {
+          "items": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/BooksDto"
@@ -184,10 +154,6 @@
             "nullable": true
           }
         }
-      },
-      "GetBooksQuery": {
-        "type": "object",
-        "additionalProperties": false
       },
       "CreateBookCommand": {
         "type": "object",

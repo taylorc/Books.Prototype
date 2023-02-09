@@ -1,11 +1,11 @@
 ﻿using System.Runtime.Serialization;
 using AutoMapper;
-using CleanArchitecture.Application.Books.Queries.GetBooks;
-using CleanArchitecture.Application.Common.Mappings;
-using CleanArchitecture.Domain.Entities;
+using Books.Prototype.Application.Books.Queries.GetBooks;
+using Books.Prototype.Application.Common.Mappings;
+using Books.Prototype.Domain.Entities;
 using NUnit.Framework;
 
-namespace CleanArchitecture.Application.UnitTests.Common.Mappings;
+namespace Books.Prototype.Application.UnitTests.Common.Mappings;
 
 public class MappingTests
 {

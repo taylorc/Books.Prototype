@@ -1,10 +1,10 @@
-﻿using CleanArchitecture.Domain.Entities;
-using CleanArchitecture.Infrastructure.Identity;
+﻿using Books.Prototype.Domain.Entities;
+using Books.Prototype.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace CleanArchitecture.Infrastructure.Persistence;
+namespace Books.Prototype.Infrastructure.Persistence;
 
 public class ApplicationDbContextInitialiser
 {

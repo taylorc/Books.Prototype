@@ -1,18 +1,18 @@
-﻿using CleanArchitecture.Application.Common.Models;
-using CleanArchitecture.Application.Books.Commands.CreateBook;
-using CleanArchitecture.Application.Books.Commands.UpdateBook;
-using CleanArchitecture.Application.Books.Queries.GetBooks;
+﻿using Books.Prototype.Application.Common.Models;
+using Books.Prototype.Application.Books.Commands.CreateBook;
+using Books.Prototype.Application.Books.Commands.UpdateBook;
+using Books.Prototype.Application.Books.Queries.GetBooks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchitecture.WebUI.Controllers;
+namespace Books.Prototype.WebUI.Controllers;
 
-[Authorize]
 public class BooksController : ApiControllerBase
 {
     [HttpGet]
-    public async Task<ActionResult<BooksVm>> GetBooks([FromQuery] GetBooksQuery query)
+    public async Task<ActionResult<BooksVm>> GetBooks()
     {
+        var query = new GetBooksQuery();
         return await Mediator.Send(query);
     }
 

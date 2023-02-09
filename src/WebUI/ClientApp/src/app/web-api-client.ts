@@ -16,7 +16,7 @@ import { HttpClient, HttpHeaders, HttpResponse, HttpResponseBase } from '@angula
 export const API_BASE_URL = new InjectionToken<string>('API_BASE_URL');
 
 export interface IBooksClient {
-    getBooks(query: GetBooksQuery | null | undefined): Observable<BooksVm>;
+    getBooks(): Observable<BooksVm>;
     create(command: CreateBookCommand): Observable<number>;
     update(id: number, command: UpdateBookCommand): Observable<FileResponse>;
 }
@@ -34,10 +34,8 @@ export class BooksClient implements IBooksClient {
         this.baseUrl = baseUrl !== undefined && baseUrl !== null ? baseUrl : "";
     }
 
-    getBooks(query: GetBooksQuery | null | undefined): Observable<BooksVm> {
-        let url_ = this.baseUrl + "/api/Books?";
-        if (query !== undefined && query !== null)
-            url_ += "query=" + encodeURIComponent("" + query) + "&";
+    getBooks(): Observable<BooksVm> {
+        let url_ = this.baseUrl + "/api/Books";
         url_ = url_.replace(/[?&]$/, "");
 
         let options_ : any = {
@@ -192,7 +190,7 @@ export class BooksClient implements IBooksClient {
 }
 
 export class BooksVm implements IBooksVm {
-    lists?: BooksDto[];
+    items?: BooksDto[];
 
     constructor(data?: IBooksVm) {
         if (data) {
@@ -205,10 +203,10 @@ export class BooksVm implements IBooksVm {
 
     init(_data?: any) {
         if (_data) {
-            if (Array.isArray(_data["lists"])) {
-                this.lists = [] as any;
-                for (let item of _data["lists"])
-                    this.lists!.push(BooksDto.fromJS(item));
+            if (Array.isArray(_data["items"])) {
+                this.items = [] as any;
+                for (let item of _data["items"])
+                    this.items!.push(BooksDto.fromJS(item));
             }
         }
     }
@@ -222,17 +220,17 @@ export class BooksVm implements IBooksVm {
 
     toJSON(data?: any) {
         data = typeof data === 'object' ? data : {};
-        if (Array.isArray(this.lists)) {
-            data["lists"] = [];
-            for (let item of this.lists)
-                data["lists"].push(item.toJSON());
+        if (Array.isArray(this.items)) {
+            data["items"] = [];
+            for (let item of this.items)
+                data["items"].push(item.toJSON());
         }
         return data;
     }
 }
 
 export interface IBooksVm {
-    lists?: BooksDto[];
+    items?: BooksDto[];
 }
 
 export class BooksDto implements IBooksDto {
@@ -297,36 +295,6 @@ export interface IBooksDto {
     price?: number;
     publishDate?: Date;
     description?: string | undefined;
-}
-
-export class GetBooksQuery implements IGetBooksQuery {
-
-    constructor(data?: IGetBooksQuery) {
-        if (data) {
-            for (var property in data) {
-                if (data.hasOwnProperty(property))
-                    (<any>this)[property] = (<any>data)[property];
-            }
-        }
-    }
-
-    init(_data?: any) {
-    }
-
-    static fromJS(data: any): GetBooksQuery {
-        data = typeof data === 'object' ? data : {};
-        let result = new GetBooksQuery();
-        result.init(data);
-        return result;
-    }
-
-    toJSON(data?: any) {
-        data = typeof data === 'object' ? data : {};
-        return data;
-    }
-}
-
-export interface IGetBooksQuery {
 }
 
 export class CreateBookCommand implements ICreateBookCommand {

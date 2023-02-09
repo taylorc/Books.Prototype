@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using CleanArchitecture.Application.Common.Mappings;
-using CleanArchitecture.Domain.Entities;
+using Books.Prototype.Application.Common.Mappings;
+using Books.Prototype.Domain.Entities;
 
-namespace CleanArchitecture.Application.Books.Queries.GetBooks;
+namespace Books.Prototype.Application.Books.Queries.GetBooks;
 
 public class BooksDto: IMapFrom<Book>
 {

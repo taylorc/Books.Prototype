@@ -1,11 +1,11 @@
-﻿using CleanArchitecture.Application.Books.Commands.CreateBook;
-using CleanArchitecture.Application.Common.Behaviours;
-using CleanArchitecture.Application.Common.Interfaces;
+﻿using Books.Prototype.Application.Books.Commands.CreateBook;
+using Books.Prototype.Application.Common.Behaviours;
+using Books.Prototype.Application.Common.Interfaces;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
 
-namespace CleanArchitecture.Application.UnitTests.Common.Behaviours;
+namespace Books.Prototype.Application.UnitTests.Common.Behaviours;
 
 public class RequestLoggerTests
 {
